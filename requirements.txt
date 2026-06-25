@@ -6,5 +6,7 @@ certifi
 scikit-learn
 pickle
 pyyaml
+mlflow
+dagshub
 
 ##-e .

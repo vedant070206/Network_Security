@@ -4,3 +4,13 @@ __pycache__/
 .ipynb_checkpoints/
 .vscode
 test_mongodb.py
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Training outputs
+Artifacts/
+artifacts/
+final_model/
+logs/
