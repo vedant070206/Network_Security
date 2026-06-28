@@ -12,5 +12,8 @@ mlflow.db
 # Training outputs
 Artifacts/
 artifacts/
-final_model/
 logs/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

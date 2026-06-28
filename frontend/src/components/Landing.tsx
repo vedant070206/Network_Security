@@ -1,7 +1,7 @@
 import { Shield } from "lucide-react";
 import Hero from "./Hero";
 import PredictionForm from "./PredictionForm";
-import { ModelInfo, HowItWorks, TechStack, Footer } from "./Sections";
+import { ModelInfo, HowItWorks, Footer } from "./Sections";
 
 export default function Landing() {
   return (
@@ -12,7 +12,7 @@ export default function Landing() {
         <PredictionForm />
         <ModelInfo />
         <HowItWorks />
-        <TechStack />
+        
       </main>
       <Footer />
     </div>
@@ -36,7 +36,6 @@ function Nav() {
           <nav className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#detect" className="hover:text-foreground transition-colors">Detect</a>
             <a href="#model" className="hover:text-foreground transition-colors">Model</a>
-            <a href="#stack" className="hover:text-foreground transition-colors">Stack</a>
           </nav>
           <div className="md:hidden" />
         </div>

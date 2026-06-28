@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Brain, Code2, Server, LineChart, Container, Cloud, GitBranch,
+  Brain, Server, LineChart, Container, Cloud, GitBranch,
   Database, Sigma, Cog,
   Boxes, FlaskConical, Activity, Workflow, Rocket,
   Github, Linkedin, Mail
@@ -11,7 +11,7 @@ import { SOCIAL } from "@/lib/links";
 const MODEL_INFO = [
   { icon: Brain, label: "Model", value: "Random Forest / Gradient Boosting" },
   { icon: FlaskConical, label: "Framework", value: "Scikit-Learn" },
-  { icon: Server, label: "Backend", value: "Flask" },
+  { icon: Server, label: "Backend", value: "FastAPI" },
   { icon: LineChart, label: "Experiment Tracking", value: "MLflow" },
   { icon: Rocket, label: "Deployment Ready", value: "Docker • Azure • AWS" },
 ];
@@ -22,19 +22,6 @@ const STEPS = [
   { icon: Brain, title: "ML Model Prediction", desc: "Tree-based ensemble model predicts class with calibrated confidence." },
   { icon: Activity, title: "Threat Detection", desc: "Heuristics + model output classify the website in real time." },
   { icon: Workflow, title: "Security Recommendation", desc: "Tailored guidance returned for users and security teams." },
-];
-
-const TECH = [
-  { name: "Python", icon: Code2 },
-  { name: "Flask", icon: Server },
-  { name: "Scikit-Learn", icon: FlaskConical },
-  { name: "MLflow", icon: LineChart },
-  { name: "Docker", icon: Container },
-  { name: "AWS", icon: Cloud },
-  { name: "Azure", icon: Cloud },
-  { name: "GitHub Actions", icon: GitBranch },
-  { name: "Pandas", icon: Sigma },
-  { name: "NumPy", icon: Boxes },
 ];
 
 export function ModelInfo() {
@@ -97,30 +84,6 @@ export function HowItWorks() {
   );
 }
 
-export function TechStack() {
-  return (
-    <section className="container mx-auto px-6 py-20">
-      <SectionHeader eyebrow="Tech Stack" title="Built with Modern Tools" subtitle="A robust foundation across ML, MLOps, cloud and CI/CD." />
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-12">
-        {TECH.map((t, i) => (
-          <motion.div
-            key={t.name}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.04 }}
-            className="glass p-5 flex flex-col items-center text-center hover:border-cyber-blue/40 hover:-translate-y-1 transition-all"
-          >
-            <div className="size-12 rounded-xl bg-gradient-to-br from-cyber-blue/20 to-transparent flex items-center justify-center mb-3">
-              <t.icon className="size-6 text-cyber-blue" />
-            </div>
-            <p className="font-medium text-sm">{t.name}</p>
-          </motion.div>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 export function Footer() {
   return (
