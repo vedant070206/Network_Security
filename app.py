@@ -10,7 +10,6 @@ from uvicorn import run as app_run
 from typing import Dict
 
 from networksecurity.exception.exception import NetworkSecurityException
-from networksecurity.pipeline.training_pipeline import TrainingPipeline
 from networksecurity.utils.main_utils.utils import load_object
 from networksecurity.utils.ml_utils.model.estimator import NetworkModel
 
@@ -100,16 +99,10 @@ def health_check():
 @app.get("/train")
 def train_route():
     try:
+        from networksecurity.pipeline.training_pipeline import TrainingPipeline
         train_pipeline = TrainingPipeline()
         train_pipeline.run_pipeline()
-
-        global network_model
-        network_model = load_network_model()
-
-        return {
-            "message": "Training completed successfully",
-            "model_reloaded": True
-        }
+        return {"message": "Training completed"}
 
     except Exception as e:
         raise NetworkSecurityException(e, sys)

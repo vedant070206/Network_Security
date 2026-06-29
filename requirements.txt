@@ -4,11 +4,11 @@ numpy
 pymongo
 certifi
 scikit-learn
-pickle
 pyyaml
 mlflow
 dagshub
 fastapi
 uvicorn
+dill
 
 ##-e .
