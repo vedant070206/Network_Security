@@ -27,10 +27,6 @@ The classification model selected for production inference is a Random Forest cl
 
 ## Live Demo
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Live%20Demo-Coming%20Soon-4F46E5?style=for-the-badge&logo=rocket&logoColor=white" alt="Live Demo Badge" />
-</div>
-
 A working demo of the application is available through the frontend experience, where users can enter URL-related features and receive an instant phishing/legitimate classification along with confidence, reasons, and recommendations.
 
 > Replace the placeholder below with your deployment URL when ready:
@@ -45,15 +41,15 @@ The project uses a structured phishing URL dataset with engineered features such
 
 ## Features
 
-- [x] End-to-end phishing URL classification pipeline
-- [x] Data ingestion, validation, and drift detection
-- [x] Feature preprocessing and model training workflow
-- [x] FastAPI-based prediction API with health checks
-- [x] Explainable prediction output with reasons and recommendations
-- [x] Docker support for reproducible deployment
-- [x] AWS S3 integration for artifact and model syncing
-- [x] MLflow tracking for experiment monitoring
-- [x] Modern frontend for interactive prediction use cases
+-  End-to-end phishing URL classification pipeline
+-  Data ingestion, validation, and drift detection
+-  Feature preprocessing and model training workflow
+-  FastAPI-based prediction API with health checks
+-  Explainable prediction output with reasons and recommendations
+-  Docker support for reproducible deployment
+-  AWS S3 integration for artifact and model syncing
+-  MLflow tracking for experiment monitoring
+-  Modern frontend for interactive prediction use cases
 
 ---
 
