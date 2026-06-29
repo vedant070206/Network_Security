@@ -2,7 +2,7 @@
 
 A production-style machine learning platform for detecting phishing URLs with explainable predictions, robust data validation, and deployment-ready infrastructure.
 
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688?logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20EC2-232F3E?logo=amazonaws&logoColor=white) ![MLflow](https://img.shields.io/badge/MLflow-Tracking-0194E2?logo=mlflow&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-Modeling-F7931E?logo=scikitlearn&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-0.110%2B-009688?logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20EC2-232F3E?logo=amazonaws&logoColor=white) ![MLflow](https://img.shields.io/badge/MLflow-Tracking-0194E2?logo=mlflow&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-Modeling-F7931E?logo=scikitlearn&logoColor=white) ![Lovable](https://img.shields.io/badge/Lovable-Frontend-FF6B6B?logo=figma&logoColor=white)
 
 ---
 
@@ -29,8 +29,6 @@ The classification model selected for production inference is a Random Forest cl
 
 A working demo of the application is available through the frontend experience, where users can enter URL-related features and receive an instant phishing/legitimate classification along with confidence, reasons, and recommendations.
 
-> Replace the placeholder below with your deployment URL when ready:
->
 > **Live Demo:** http://3.110.41.79:3000
 
 ## Dataset Overview
@@ -41,15 +39,15 @@ The project uses a structured phishing URL dataset with engineered features such
 
 ## Features
 
--  End-to-end phishing URL classification pipeline
--  Data ingestion, validation, and drift detection
--  Feature preprocessing and model training workflow
--  FastAPI-based prediction API with health checks
--  Explainable prediction output with reasons and recommendations
--  Docker support for reproducible deployment
--  AWS S3 integration for artifact and model syncing
--  MLflow tracking for experiment monitoring
--  Modern frontend for interactive prediction use cases
+- ✅ End-to-end phishing URL classification pipeline
+- ✅ Data ingestion, validation, and drift detection
+- ✅ Feature preprocessing and model training workflow
+- ✅ FastAPI-based prediction API with health checks
+- ✅ Explainable prediction output with reasons and recommendations
+- ✅ Docker support for reproducible deployment
+- ✅ AWS S3 integration for artifact and model syncing
+- ✅ MLflow tracking for experiment monitoring
+- ✅ Modern frontend for interactive prediction use cases
 
 ---
 
