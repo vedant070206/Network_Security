@@ -4,4 +4,4 @@ export const SOCIAL = {
   email: "mailto:thakar2006@gmail.com",
 };
 
-export const API_URL = "http://localhost:8000/predict";
+export const API_URL = "http://3.110.41.79:8000";
