@@ -25,6 +25,22 @@ The classification model selected for production inference is a Random Forest cl
 | Training | 99.15 | 98.8 | 99.49 |
 | Test | 97.32 | 96.81 | 97.83 |
 
+## Live Demo
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Live%20Demo-Coming%20Soon-4F46E5?style=for-the-badge&logo=rocket&logoColor=white" alt="Live Demo Badge" />
+</div>
+
+A working demo of the application is available through the frontend experience, where users can enter URL-related features and receive an instant phishing/legitimate classification along with confidence, reasons, and recommendations.
+
+> Replace the placeholder below with your deployment URL when ready:
+>
+> **Live Demo:** http://3.110.41.79:3000
+
+## Dataset Overview
+
+The project uses a structured phishing URL dataset with engineered features such as URL length, presence of IP addresses, SSL state, domain registration length, DNS information, and traffic-related attributes. These features are used to train and evaluate the classifier in a supervised setting.
+
 ---
 
 ## Features
